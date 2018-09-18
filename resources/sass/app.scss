@@ -13,6 +13,50 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.maroon-color {
-  color: maroon;
+.outer-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.fade-ct {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.flex-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login, .right-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text-login {
+  width: 100%;
+  padding: 150px 0;
+  border-right: 5px solid white;
+}
+
+.text-login h2{
+  color: white;
+  font-size: 3rem;
+}
+
+.flat-background {
+  background-image: url('/image/flat-wallpaper.jpg');
+}
+
+.custom-form {
+  width: 70%;
+}
+
+.key-back-color {
+  background-color: #0DA2E2 !important;
+  color: white;
 }
