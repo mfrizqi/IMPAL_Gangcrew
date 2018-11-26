@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Coral - Luxurious Hotel </title>
+    <title>Coral - Luxurious Hotel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -25,7 +24,6 @@
 
     
     <link rel="stylesheet" href="css/flaticon.css">
-    
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -33,14 +31,14 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Coral</a>
+        <a class="navbar-brand" href="index.html">Cozy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
-        <!-- D:\xampp\htdocs\IMPAL_Gangcrew\public\image\bg_1.jpg -->
+
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
@@ -51,7 +49,7 @@
                   <a class="dropdown-item" href="room.html">Family Room</a>
                 </div>
             </li>
-            <li class="nav-item"><a href="dining-bar.html" class="nav-link">Dining &amp; Bar</a></li>
+            <li class="nav-item active"><a href="dining-bar.html" class="nav-link">Dining &amp; Bar</a></li>
             <li class="nav-item"><a href="amenities.html" class="nav-link">Amenities</a></li>
             <li class="nav-item"><a href="reservation.html" class="nav-link">Booking</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
@@ -61,316 +59,28 @@
       </div>
     </nav>
     <!-- END nav -->
-    
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('image/bg_1.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-start">
-            <div class="col-md-6 col-sm-12 ftco-animate">
-              <h1 class="mb-4">Welcome to Coral the paradize near the blue sea</h1>
-              <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="slider-item" style="background-image: url('image/bg_2.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-start">
-            <div class="col-md-6 col-sm-12 ftco-animate">
-              <h1 class="mb-4">Book the perfect accomodations without breaking the bank</h1>
-              <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-item" style="background-image: url('image/bg_3.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-start">
-            <div class="col-md-6 col-sm-12 ftco-animate">
-              <h1 class="mb-4">Lets go to discovering</h1>
-              <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END slider -->
-
-    <div class="ftco-section-reservation">
-      <div class="container">
-        <div class="row justify-content-end ftco-animate">
-          <div class="col-lg-4 col-md-5 reservation p-md-5">
-            <div class="block-17">
-              <form action="" method="post" class="d-block">
-                <div class="fields d-block">
-
-                  <div class="book-date one-third">
-                    <label for="check-in">Check in:</label>
-                    <input type="text" id="checkin_date" class="form-control" placeholder="M/D/YYYY">
-                  </div>
-
-                  <div class="book-date one-third">
-                    <label for="check-out">Check out:</label>
-                    <input type="text" id="checkout_date" class="form-control" placeholder="M/D/YYYY">
-                  </div>
-
-                  <div class="one-third">
-                    <label for="Guest">Guest:</label>
-                    <div class="select-wrap">
-                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4+</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <input type="submit" class="search-submit btn btn-primary" value="Check Availability">  
-              </form>
-            </div>
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_3.jpg');background-size: cover; height: 100vh;">
+      <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-6 col-sm-12 ftco-animate text-center mt-4">
+            <h1 class="mb-4 mt-5 text-center" style="color: white">Enjoy our best dishes from all corners of the world</h1>
+            <button class="btn btn-primary btn-outline-white px-4 py-3 mt-5" onclick="scDown()" style="transform: rotate(90deg); border: 2px solid white !important; border-radius: 50px"><span class="ion-ios-arrow-forward ml-3 mr-3"></span></button>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="services bg-light">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-4 ftco-animate py-5 nav-link-wrap aside-stretch">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab" aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-bed"></span> Master Bedrooms</a>
-
-              <a class="nav-link px-4" id="v-pills-buffet-tab" data-toggle="pill" href="#v-pills-buffet" role="tab" aria-controls="v-pills-buffet" aria-selected="false"><span class="mr-3 flaticon-tray"></span> Breakfast Buffet</a>
-
-              <a class="nav-link px-4" id="v-pills-fitness-tab" data-toggle="pill" href="#v-pills-fitness" role="tab" aria-controls="v-pills-fitness" aria-selected="false"><span class="mr-3 flaticon-woman"></span> Fitness Center</a>
-
-              <a class="nav-link px-4" id="v-pills-reception-tab" data-toggle="pill" href="#v-pills-reception" role="tab" aria-controls="v-pills-reception" aria-selected="false"><span class="mr-3 flaticon-receptionist"></span> 24 Hour Reception</a>
-
-              <a class="nav-link px-4" id="v-pills-sea-tab" data-toggle="pill" href="#v-pills-sea" role="tab" aria-controls="v-pills-sea" aria-selected="false"><span class="mr-3 flaticon-deck-chair"></span> Sea View Balcony</a>
-
-              <a class="nav-link px-4" id="v-pills-spa-tab" data-toggle="pill" href="#v-pills-spa" role="tab" aria-controls="v-pills-spa" aria-selected="false"><span class="mr-3 flaticon-spa"></span> Pool &amp; Spa</a>
-
-              <a class="nav-link px-4" id="v-pills-wifi-tab" data-toggle="pill" href="#v-pills-wifi" role="tab" aria-controls="v-pills-wifi" aria-selected="false"><span class="mr-3 flaticon-wifi-router"></span> Free wifi</a>
-
-              <a class="nav-link px-4" id="v-pills-resto-tab" data-toggle="pill" href="#v-pills-resto" role="tab" aria-controls="v-pills-resto" aria-selected="false"><span class="mr-3 flaticon-disco-ball"></span> Resto bar</a>
-            </div>
-          </div>
-          <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">
-            
-            <div class="tab-content pl-md-5" id="v-pills-tabContent">
-
-              <div class="tab-pane fade show active" id="v-pills-master" role="tabpanel" aria-labelledby="v-pills-master-tab">
-                <span class="icon mb-3 d-block flaticon-bed"></span>
-                <h2 class="mb-4">Master Bedrooms</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
-                <span class="icon mb-3 d-block flaticon-tray"></span>
-                <h2 class="mb-4">Breakfast Buffet</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
-                <span class="icon mb-3 d-block flaticon-woman"></span>
-                <h2 class="mb-4">Fitness Center</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-reception" role="tabpanel" aria-labelledby="v-pills-reception-tab">
-                <span class="icon mb-3 d-block flaticon-receptionist"></span>
-                <h2 class="mb-4">24 Hours Reception</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-sea" role="tabpanel" aria-labelledby="v-pills-sea-tab">
-                <span class="icon mb-3 d-block flaticon-deck-chair"></span>
-                <h2 class="mb-4">Sea view balcony</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-spa" role="tabpanel" aria-labelledby="v-pills-spa-tab">
-                <span class="icon mb-3 d-block flaticon-spa"></span>
-                <h2 class="mb-4">Pool &amp; Spa</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-              <div class="tab-pane fade" id="v-pills-wifi" role="tabpanel" aria-labelledby="v-pills-wifi-tab">
-                <span class="icon mb-3 d-block flaticon-wifi-router"></span>
-                <h2 class="mb-4">Free wifi coverage</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-              <div class="tab-pane fade" id="v-pills-resto" role="tabpanel" aria-labelledby="v-pills-resto-tab">
-                <span class="icon mb-3 d-block flaticon-wifi-dico-ball"></span>
-                <h2 class="mb-4">Restaurant &amp; Bar</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                <p><a href="#" class="btn btn-primary">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section room-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Our Rooms</span>
-            <h2>Explore our rooms</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 ftco-animate">
-           <div class="carousel-room owl-carousel">
-            <div class="item">
-              <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(image/room-1.jpg);"></a>
-                <div class="text p-4">
-                  <div class="d-flex mb-1">
-                    <div class="one-third">
-                      <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                      <h3><a href="#">Double Room</a></h3>
-                    </div>
-                    <div class="one-forth text-center">
-                      <p class="price">$99 <br><span>/night</span></p>
-                    </div>
-                  </div>
-                  <p class="features">
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                  </p>
-                  <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(image/room-2.jpg);"></a>
-                <div class="text p-4">
-                  <div class="d-flex mb-1">
-                    <div class="one-third">
-                      <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                      <h3><a href="#">Family Room</a></h3>
-                    </div>
-                    <div class="one-forth text-center">
-                      <p class="price">$99 <br><span>/night</span></p>
-                    </div>
-                  </div>
-                  <p class="features">
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                  </p>
-                  <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(image/room-3.jpg);"></a>
-                <div class="text p-4">
-                  <div class="d-flex mb-1">
-                    <div class="one-third">
-                      <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                      <h3><a href="#">Deluxe Room</a></h3>
-                    </div>
-                    <div class="one-forth text-center">
-                      <p class="price">$99 <br><span>/night</span></p>
-                    </div>
-                  </div>
-                  <p class="features">
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                  </p>
-                  <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(image/room-4.jpg);"></a>
-                <div class="text p-4">
-                  <div class="d-flex mb-1">
-                    <div class="one-third">
-                      <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                      <h3><a href="#">Suite Room</a></h3>
-                    </div>
-                    <div class="one-forth text-center">
-                      <p class="price">$99 <br><span>/night</span></p>
-                    </div>
-                  </div>
-                  <p class="features">
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                  </p>
-                  <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-                </div>
-              </div>
-            </div>
-           </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ftco-section-parallax">
-      <div class="parallax-img d-flex align-items-md-center align-items-sm-end" style="background-image: url('image/bg_4.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row desc d-flex justify-content-center">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <span class="subheading">Our Conference</span>
-              <h2 class="h1 font-weight-bold">Conference Centre</h2>
-              <p><a href="#" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">View more details</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="ftco-section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
+          <div class="col-md-7 text-center heading-section ftco-animate" id="listFood">
             <span class="subheading">Our Menu</span>
             <h2>Restaurant &amp; Bar</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 dish-menu">
-
             <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-tray"></span> Main</a>
               <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-beer"></span> Dessert</a>
@@ -773,104 +483,12 @@
       </div>
     </section>
 
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Guests Says</span>
-            <h2>Our Satisfied Guests says</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel owl-carousel ftco-owl">
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Guests from Italy</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(image/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Guests from Italy</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(image/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Guests from Italy</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Guests from Italy</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item text-center">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Dennis Green</p>
-                    <span class="position">Guests from Italy</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Coral</h2>
+              <h2 class="ftco-heading-2">Cozy</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -883,8 +501,13 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Opening Hours</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Monday - Friday: <span>08:30 - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Saturday & Sunday: <span>06:30 - 23:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Monday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Tuesday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Wednesday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Thursday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Friday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Saturday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Sunday: <span>08: - 22:00</span></a></li>
               </ul>
             </div>
           </div>
@@ -937,6 +560,14 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>
+    function scDown(){
+    $('html, body').animate({
+                    scrollTop: $("#listFood").offset().top
+                }, 1600);
+    }
+  </script>
     
   </body>
 </html>

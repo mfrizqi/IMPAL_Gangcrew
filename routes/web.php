@@ -23,6 +23,11 @@ Route::get('/room', function () {
     return view('room');
 });
 
+Route::get('/dining', function () {
+    return view('dining');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
