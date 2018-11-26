@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cozy - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Coral - </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -24,6 +25,7 @@
 
     
     <link rel="stylesheet" href="css/flaticon.css">
+    
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,7 +33,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Cozy</a>
+        <a class="navbar-brand" href="index.html">Coral</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -66,7 +68,7 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-start">
             <div class="col-md-6 col-sm-12 ftco-animate">
-              <h1 class="mb-4">Welcome to Cozy the paradize near the blue sea</h1>
+              <h1 class="mb-4">Welcome to Coral the paradize near the blue sea</h1>
               <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p>
             </div>
           </div>
@@ -244,7 +246,7 @@
            <div class="carousel-room owl-carousel">
             <div class="item">
               <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(images/room-1.jpg);"></a>
+                <a href="#" class="room-img" style="background-image: url(image/room-1.jpg);"></a>
                 <div class="text p-4">
                   <div class="d-flex mb-1">
                     <div class="one-third">
@@ -268,7 +270,7 @@
             </div>
             <div class="item">
               <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(images/room-2.jpg);"></a>
+                <a href="#" class="room-img" style="background-image: url(image/room-2.jpg);"></a>
                 <div class="text p-4">
                   <div class="d-flex mb-1">
                     <div class="one-third">
@@ -292,7 +294,7 @@
             </div>
             <div class="item">
               <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(images/room-3.jpg);"></a>
+                <a href="#" class="room-img" style="background-image: url(image/room-3.jpg);"></a>
                 <div class="text p-4">
                   <div class="d-flex mb-1">
                     <div class="one-third">
@@ -316,7 +318,7 @@
             </div>
             <div class="item">
               <div class="room-wrap">
-                <a href="#" class="room-img" style="background-image: url(images/room-4.jpg);"></a>
+                <a href="#" class="room-img" style="background-image: url(image/room-4.jpg);"></a>
                 <div class="text p-4">
                   <div class="d-flex mb-1">
                     <div class="one-third">
@@ -344,7 +346,7 @@
       </div>
     </section>
     <section class="ftco-section-parallax">
-      <div class="parallax-img d-flex align-items-md-center align-items-sm-end" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="parallax-img d-flex align-items-md-center align-items-sm-end" style="background-image: url('image/bg_4.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row desc d-flex justify-content-center">
@@ -380,7 +382,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-3.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -392,7 +394,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-4.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Fruit Vanilla Ice Cream</h3>
@@ -404,7 +406,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-5.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Asian Hoisin Pork</h3>
@@ -416,7 +418,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-6.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Spicy Fried Rice &amp; Bacon</h3>
@@ -428,7 +430,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-7.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Mango Chili Chutney</h3>
@@ -443,7 +445,7 @@
 
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-8.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Savory Watercress Chinese Pancakes</h3>
@@ -455,7 +457,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-9.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-9.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Soup With Vegetables And Meat</h3>
@@ -467,7 +469,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-10.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-10.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Udon Noodles With Vegetables</h3>
@@ -479,7 +481,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-11.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-11.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Baked Lobster With A Garnish</h3>
@@ -491,7 +493,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dish-8.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Octopus with Vegetables</h3>
@@ -510,7 +512,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-1.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-1.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -522,7 +524,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-2.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-2.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -534,7 +536,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-3.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-3.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -546,7 +548,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-4.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-4.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -558,7 +560,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-5.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-5.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Grilled Beef with potatoes</h3>
@@ -573,7 +575,7 @@
 
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-6.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-6.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Tiramisu</h3>
@@ -585,7 +587,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-7.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-7.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Chocolate Cream</h3>
@@ -597,7 +599,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-8.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-8.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Pizza Pie</h3>
@@ -609,7 +611,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-9.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-9.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Sicilian Ricotta</h3>
@@ -621,7 +623,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-10.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/dessert-10.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Mango FLoat</h3>
@@ -640,7 +642,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-1.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-1.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Lemon Juice</h3>
@@ -652,7 +654,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-2.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-2.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Guava Juice</h3>
@@ -664,7 +666,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-3.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-3.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Sprite</h3>
@@ -676,7 +678,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-4.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-4.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Cola</h3>
@@ -688,7 +690,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-5.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-5.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Wine</h3>
@@ -703,7 +705,7 @@
 
                   <div class="col-lg-6">
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-6.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-6.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Beer</h3>
@@ -715,7 +717,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-7.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-7.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Mango Juice</h3>
@@ -727,7 +729,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-8.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-8.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Apple Juice</h3>
@@ -739,7 +741,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-9.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-9.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Strawberry Juice</h3>
@@ -751,7 +753,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/drink-10.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(image/drink-10.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Orange Juice</h3>
@@ -784,7 +786,7 @@
             <div class="carousel owl-carousel ftco-owl">
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -799,7 +801,7 @@
               </div>
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(image/person_2.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -814,7 +816,7 @@
               </div>
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(image/person_3.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -829,7 +831,7 @@
               </div>
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -844,7 +846,7 @@
               </div>
               <div class="item text-center">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url(image/person_1.jpg)">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -858,184 +860,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Blog</span>
-            <h2>Recent Blog</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="carousel1 owl-carousel ftco-owl">
-            <div class="item">
-              <div class="blog-entry">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-                </a>
-                <div class="text p-4 d-block">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#">July 12, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                    <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="100">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-                </a>
-                <div class="text p-4">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#">July 12, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                    <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_7.jpg');">
-                </a>
-                <div class="text p-4">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#">July 12, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                    <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_8.jpg');">
-                </a>
-                <div class="text p-4">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#">July 12, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                    <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_9.jpg');">
-                </a>
-                <div class="text p-4">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#">July 12, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                    <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container-fluid section-event">
-        <div class="row no-gutters justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Join Event</span>
-            <h2>Our Events</h2>
-          </div>
-        </div>
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 event-big-img" style="background-image: url(images/event.jpg);"></div>
-          <div class="col-md-6 event-wrap">
-            <div class="event mb-5 ftco-animate">
-              <div class="text">
-                <p class="meta p-2 text-center">
-                  <span class="day">12</span>
-                  <span class="mos">July</span>
-                  <span class="year">2018</span>
-                </p>
-                <h3><a href="event.html">Big summer meetups</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <p>
-                  <a href="#" class="btn btn-primary">Join event</a>
-                  <a href="#" class="btn btn-primary btn-outline-primary">See details</a>
-                </p>
-              </div>
-            </div>
-            <div class="event mb-5 ftco-animate">
-              <div class="text">
-                <p class="meta p-2 text-center">
-                  <span class="day">12</span>
-                  <span class="mos">July</span>
-                  <span class="year">2018</span>
-                </p>
-                <h3><a href="event.html">Big summer meetups</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-                <p>
-                  <a href="#" class="btn btn-primary">Join event</a>
-                  <a href="#" class="btn btn-primary btn-outline-primary">See details</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="instagram">
-      <div class="container-fluid">
-        <div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2><span class="icon-instagram"></span> Instagram</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(images/insta-1.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(images/insta-2.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(images/insta-3.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(images/insta-4.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(images/insta-5.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -1046,7 +870,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Cozy</h2>
+              <h2 class="ftco-heading-2">Coral</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -1059,13 +883,8 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Opening Hours</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Monday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Tuesday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Wednesday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Thursday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Friday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Saturday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Sunday: <span>08: - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Monday - Friday: <span>08:30 - 22:00</span></a></li>
+                <li><a href="#" class="py-2 d-block">Saturday & Sunday: <span>06:30 - 23:00</span></a></li>
               </ul>
             </div>
           </div>
@@ -1091,14 +910,6 @@
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
       </div>
