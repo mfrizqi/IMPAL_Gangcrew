@@ -59,37 +59,23 @@
       </div>
     </nav>
     <!-- END nav -->
-    
-    <section class="home-slider owl-carousel">
-      <!-- <div class="slider-item" style="background-image: url('image/bg_1.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-end">
-            <div class="col-md-10 col-sm-12 ftco-animate mb-4">
-              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Rooms</span></p>
-              <h1 class="mb-3">Choose Our Rooms</h1>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="slider-item" style="background-image: url('image/bg_1.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
+
+      <div style="background-image: url('image/bg_2.jpg');background-size: cover; height: 100vh;">
+        <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)">
           <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-6 col-sm-12 ftco-animate">
-              <h1 class="mb-4 text-center">Welcome to Coral the paradize near the blue sea</h1>
-              <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span> Watch Video</a></p>
+            <div class="col-md-6 col-sm-12 ftco-animate text-center">
+              <h1 class="mb-4 mt-3 text-center" style="color: white">Pick your sweetest room for you and your family</h1>
+              <button class="btn btn-primary btn-outline-white px-4 py-3 mt-5" onclick="scDown()" style="transform: rotate(90deg); border: 2px solid white !important; border-radius: 50px"><span class="ion-ios-arrow-forward ml-3 mr-3"></span></button>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="ftco-section room-section bg-light">
+    <section class="ftco-section room-section bg-light" >
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Our Rooms</span>
+          <div class="col-md-7 text-center heading-section ftco-animate" id="listRoom">
+            <span class="subheading" >Our Rooms</span>
             <h2>Explore our rooms</h2>
           </div>
         </div>
@@ -166,125 +152,6 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="room-wrap">
-              <a href="#" class="room-img" style="background-image: url(image/room-4.jpg);"></a>
-              <div class="text p-4">
-                <div class="d-flex mb-1">
-                  <div class="one-third">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <h3><a href="#">Premier Suite Room</a></h3>
-                  </div>
-                  <div class="one-forth text-center">
-                    <p class="price">$99 <br><span>/night</span></p>
-                  </div>
-                </div>
-                <p class="features">
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                </p>
-                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="room-wrap">
-              <a href="#" class="room-img" style="background-image: url(image/room-5.jpg);"></a>
-              <div class="text p-4">
-                <div class="d-flex mb-1">
-                  <div class="one-third">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <h3><a href="#">Superior Room</a></h3>
-                  </div>
-                  <div class="one-forth text-center">
-                    <p class="price">$99 <br><span>/night</span></p>
-                  </div>
-                </div>
-                <p class="features">
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                </p>
-                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="room-wrap">
-              <a href="#" class="room-img" style="background-image: url(image/room-6.jpg);"></a>
-              <div class="text p-4">
-                <div class="d-flex mb-1">
-                  <div class="one-third">
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                    <h3><a href="#">Superior Room Twin</a></h3>
-                  </div>
-                  <div class="one-forth text-center">
-                    <p class="price">$99 <br><span>/night</span></p>
-                  </div>
-                </div>
-                <p class="features">
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
-                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                </p>
-                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="instagram">
-      <div class="container-fluid">
-        <div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2><span class="icon-instagram"></span> Instagram</h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="image/insta-1.jpg" class="insta-img image-popup" style="background-image: url(image/insta-1.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="image/insta-2.jpg" class="insta-img image-popup" style="background-image: url(image/insta-2.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="image/insta-3.jpg" class="insta-img image-popup" style="background-image: url(image/insta-3.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="image/insta-4.jpg" class="insta-img image-popup" style="background-image: url(image/insta-4.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="image/insta-5.jpg" class="insta-img image-popup" style="background-image: url(image/insta-5.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -341,14 +208,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
       </div>
     </footer>
     
@@ -374,6 +233,17 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>
+
+  function scDown(){
+    $('html, body').animate({
+                    scrollTop: $("#listRoom").offset().top
+                }, 1600);
+  }
+
+    </script>
     
   </body>
 </html>
