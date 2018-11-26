@@ -35,7 +35,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">Coral</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span>
         </button>
         <!-- D:\xampp\htdocs\IMPAL_Gangcrew\public\image\bg_1.jpg -->
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -63,7 +63,7 @@
     <!-- END nav -->
     
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('image/bg_1.jpg');">
+      <div class="slider-item" style="background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_1.jpg'); background-size: cover;">
         <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text align-items-center justify-content-start">
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url('image/bg_2.jpg');">
+      <div class="slider-item" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_2.jpg'); background-size: cover;">
         <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text align-items-center justify-content-start">
@@ -87,7 +87,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image: url('image/bg_3.jpg');">
+      <div class="slider-item" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_3.jpg'); background-size: cover;">
         <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text align-items-center justify-content-start">
@@ -101,9 +101,9 @@
     </section>
     <!-- END slider -->
 
-    <div class="ftco-section-reservation">
-      <div class="container">
-        <div class="row justify-content-end ftco-animate">
+    <div class="ftco-section-reservation mr-md-3 mr-0">
+      <div class="container mr-md-3 mr-0">
+        <div class="row justify-content-end ftco-animate mr-md-3 mr-0">
           <div class="col-lg-4 col-md-5 reservation p-md-5">
             <div class="block-17">
               <form action="" method="post" class="d-block">
