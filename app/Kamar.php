@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kamar extends Model
 {
-    protected $table="add_kamars";
-    protected $primaryKey ="id_kamar";
-    protected $fillable=['jenis_kamar','harga_kamar','status_kamar'];
+    protected $table="kamars";
+    protected $primaryKey ="id";
+    protected $fillable=[
+        'jenis_kamar',
+        'harga_kamar',
+        'status_kamar'];
+    function memesan(){
+        return $this->hasMany('app/memesan');
+    }
 }
