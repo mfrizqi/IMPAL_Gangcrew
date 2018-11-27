@@ -60,11 +60,11 @@
     </nav>
     <!-- END nav -->
 
-      <div style="background-image: url('image/bg_2.jpg');background-size: cover; height: 100vh">
+      <div style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_6.jpg');background-size: cover; height: 100vh">
         <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-6 col-sm-12 ftco-animate text-center">
-              <h1 class="mb-4 mt-3 text-center" style="color: white">Choose your great time with your family</h1>
+              <h1 class="mb-4 mt-4 text-center" style="color: white">Choose your great time with your family</h1>
               <button class="btn btn-primary btn-outline-white px-4 py-3 mt-5" onclick="scDown()" style="transform: rotate(90deg); border: 2px solid white !important; border-radius: 50px"><span class="ion-ios-arrow-forward ml-3 mr-3"></span></button>
             </div>
           </div>
