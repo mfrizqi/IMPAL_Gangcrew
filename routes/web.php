@@ -27,6 +27,10 @@ Route::get('/dining', function () {
     return view('dining');
 });
 
+Route::get('/checkroom', function () {
+    return view('checkroom');
+});
+
 
 Auth::routes();
 

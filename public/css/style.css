@@ -9150,3 +9150,21 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    /* Own custom css by MFR */
+
+    .block-17 form .check-submit {
+      width: 100%;
+      background: #ff6138;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 10px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;}
+
+    .block-17 form .check-submit:hover {
+      background: #FFF;
+      color: #ff6138;
+      border: 2px solid #FFF; }
