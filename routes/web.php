@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/homee', function () {
+    var_dump(User::first());
+    die('you bitch');
     return view('homee');
 });
 

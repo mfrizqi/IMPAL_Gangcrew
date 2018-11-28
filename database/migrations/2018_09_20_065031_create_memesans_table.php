@@ -16,18 +16,18 @@ class CreateMemesansTable extends Migration
         Schema::create('memesans', function (Blueprint $table) {
             $table->increments('id_memesan');
             $table->integer('id_kamar')->unsigned();
-            $table->integer('id_tamu')->unsigned();
+            $table->integer('id_user')->unsigned();
             $table->string('jenis_kamar');
             $table->double('harga');
             $table->string('status');
-            $table->foreign('id_tamu')
-                ->references('id_tamu')
-                ->on('add_tamus')
-                ->onDelete('cascade');
             $table->foreign('id_kamar')
                 ->references('id_kamar')
                 ->on('kamars')
                 ->onDelete('cascade');
+            $table->foreign('id_user')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');    
             $table->timestamps();
         });
     }

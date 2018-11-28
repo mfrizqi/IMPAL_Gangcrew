@@ -6,22 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Memesan extends Model
 {
-    protected $table="memesans";
-    protected $primaryKey ="id";
     protected $fillable=[
         'id_kamar',
-        'id_tamu',
+        'id_user',
         'jenis_kamar',
         'harga',
         'status'];
     function kamar(){
-        return $this->belongsTo('app/kamar');
+        return $this->belongsTo(Kamar::class);
     }
     function tamu(){
-        return $this->belongsTo('app/addTamu');
+        return $this->hasOne(User::class);
     }
     function konfirmasi(){
-        return $this->hasOne('app/konfirmasi');
+        return $this->hasOne(Konfirmasi::class);
     }
 
 }
