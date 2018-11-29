@@ -23,6 +23,10 @@ Route::get('/dining', function () {
     return view('dining');
 })->name('dining');
 
+Route::get('/checkroom', function () {
+    return view('checkroom');
+});
+
 
 Auth::routes();
 
