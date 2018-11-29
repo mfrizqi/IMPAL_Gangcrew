@@ -12,20 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/homee', function () {
     return view('homee');
-});
+})->name('home');
 
 Route::get('/room', function () {
     return view('room');
-});
+})->name('room');
 
 Route::get('/dining', function () {
     return view('dining');
-});
+})->name('dining');
 
 
 Auth::routes();
