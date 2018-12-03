@@ -10,8 +10,6 @@
             <div class="row slider-text align-items-center justify-content-start">
                 <div class="col-md-6 col-sm-12 ftco-animate">
                     <h1 class="mb-4">Welcome to Coral the paradize near the blue sea</h1>
-                    <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo">
-                      <span class="ion-ios-play mr-2"></span> Watch Video</a></p>
                 </div>
             </div>
         </div>
@@ -23,8 +21,6 @@
             <div class="row slider-text align-items-center justify-content-start">
                 <div class="col-md-6 col-sm-12 ftco-animate">
                     <h1 class="mb-4">Book the perfect accomodations without breaking the bank</h1>
-                    <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span
-                                class="ion-ios-play mr-2"></span> Watch Video</a></p>
                 </div>
             </div>
         </div>
@@ -36,8 +32,6 @@
             <div class="row slider-text align-items-center justify-content-start">
                 <div class="col-md-6 col-sm-12 ftco-animate">
                     <h1 class="mb-4">Lets go to discovering</h1>
-                    <p><a href="https://vimeo.com/45830194" class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span
-                                class="ion-ios-play mr-2"></span> Watch Video</a></p>
                 </div>
             </div>
         </div>
@@ -134,7 +128,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
@@ -145,7 +138,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
@@ -156,7 +148,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-reception" role="tabpanel" aria-labelledby="v-pills-reception-tab">
@@ -167,7 +158,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-sea" role="tabpanel" aria-labelledby="v-pills-sea-tab">
@@ -178,7 +168,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-spa" role="tabpanel" aria-labelledby="v-pills-spa-tab">
@@ -189,7 +178,6 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
                     <div class="tab-pane fade" id="v-pills-wifi" role="tabpanel" aria-labelledby="v-pills-wifi-tab">
                         <span class="icon mb-3 d-block flaticon-wifi-router"></span>
@@ -199,17 +187,15 @@
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
                     <div class="tab-pane fade" id="v-pills-resto" role="tabpanel" aria-labelledby="v-pills-resto-tab">
-                        <span class="icon mb-3 d-block flaticon-wifi-dico-ball"></span>
+                        <span class="icon mb-3 d-block flaticon-disco-ball"></span>
                         <h2 class="mb-4">Restaurant &amp; Bar</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
                             voluptate, quibusdam sunt iste dolores consequatur</p>
                         <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto
                             facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi
                             exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -291,33 +277,6 @@
                                         <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                                                 class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
                                         <h3><a href="#">Deluxe Room</a></h3>
-                                    </div>
-                                    <div class="one-forth text-center">
-                                        <p class="price">$99 <br><span>/night</span></p>
-                                    </div>
-                                </div>
-                                <p class="features">
-                                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for
-                                        traveling couples</span>
-                                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
-                                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
-                                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting
-                                        facilities</span>
-                                    <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                                </p>
-                                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="room-wrap">
-                            <a href="#" class="room-img" style="background-image: url(image/room-4.jpg);"></a>
-                            <div class="text p-4">
-                                <div class="d-flex mb-1">
-                                    <div class="one-third">
-                                        <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                                                class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span></p>
-                                        <h3><a href="#">Suite Room</a></h3>
                                     </div>
                                     <div class="one-forth text-center">
                                         <p class="price">$99 <br><span>/night</span></p>
