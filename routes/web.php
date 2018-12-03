@@ -30,8 +30,6 @@ Route::get('/checkroom', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/react', function() {
     return view('react.root');
 });
