@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Rizgay')
+@section('title', 'Coral')
 
 @section('content')
 <div style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_3.jpg');background-size: cover; height: 100vh;">
@@ -19,7 +19,7 @@
 <section class="ftco-section bg-light">
   <div class="container">
       <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate" id="listFood">
+          <div class="col-md-7 text-center heading-section ftco-animate" id="downhere">
               <span class="subheading">Our Menu</span>
               <h2>Restaurant &amp; Bar</h2>
           </div>

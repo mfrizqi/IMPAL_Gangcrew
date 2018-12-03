@@ -18,7 +18,7 @@
 <section class="ftco-section room-section bg-light">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate" id="listRoom">
+            <div class="col-md-7 text-center heading-section ftco-animate" id="downhere">
                 <span class="subheading">Our Rooms</span>
                 <h2>Explore our rooms</h2>
             </div>

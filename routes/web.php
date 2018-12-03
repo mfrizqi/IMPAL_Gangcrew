@@ -27,6 +27,13 @@ Route::get('/checkroom', function () {
     return view('checkroom');
 });
 
+Route::get('/reserve',function(){
+    return view('reserve');
+});
+
+Route::get('/payment',function(){
+    return view('payment');
+});
 
 Auth::routes();
 
