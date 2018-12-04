@@ -28,7 +28,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    function memesan(){
-        return $this->hasOne(Memesan::class);
-    }
+    
 }
