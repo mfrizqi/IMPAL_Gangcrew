@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UserController extends Controller
 {
@@ -34,7 +35,25 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $User = new User;
+        $User->id = $request->id;
+        $User->name = $request->nama;
+        $User->email = $request->email_user;
+        $User->password = $request->pass;
+        $User->alamat = $request->almt;
+        $User->role = 2;
+        $User->umur = $request->umr;
+        $User->no_tlp = $request->tlp;
+        $User->gaji = $request->gji;
+
+        $Kamar->save();
+
+        if($Kamar->save()){
+            return back()->with('succes','User Berhasil Ditambahkan');
+        }
+        else{
+            return back()->with('danger','User Gagal Ditambahkan');
+        }
     }
 
     /**
@@ -68,7 +87,24 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $User = User::findorFail($id);
+        $User->id = $request->id;
+        $User->name = $request->nama;
+        $User->email = $request->email_user;
+        $User->password = $request->pass;
+        $User->alamat = $request->almt;
+        $User->umur = $request->umr;
+        $User->no_tlp = $request->tlp;
+        $User->gaji = $request->gji;
+
+        $Kamar->save();
+
+        if($Kamar->save()){
+            return back()->with('succes','User Berhasil Diupdate');
+        }
+        else{
+            return back()->with('danger','User Gagal Diupdate');
+        }
     }
 
     /**
@@ -79,6 +115,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::findorFail($id)->delete();
     }
 }

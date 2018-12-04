@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->string('alamat');
+            $table->integer('role');
             $table->integer('umur');
             $table->string('no_tlp');
             $table->double('gaji')->nullable();
