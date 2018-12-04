@@ -29,7 +29,7 @@ Route::get('/checkroom', function () {
 
 Route::get('/reserve',function(){
     return view('reserve');
-});
+})->name('reserve');
 
 Route::get('/payment',function(){
     return view('payment');
@@ -37,6 +37,10 @@ Route::get('/payment',function(){
 
 Auth::routes();
 
-Route::get('/react', function() {
-    return view('react.root');
-});
+// Route::get('/react', function() {
+//     return view('react.root');
+// });
+
+Route::resource('/kamar', 'KamarController');
+Route::resource('/memesan', 'MemesanController');
+Route::resource('/user', 'UserController');

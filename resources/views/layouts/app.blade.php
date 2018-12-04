@@ -48,7 +48,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Coral</a>
+                <a class="navbar-brand" href="index.html">{{env('APP_ENV')}}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="oi oi-menu"></span>
@@ -59,7 +59,7 @@
                         <li class="nav-item active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route('room')}}">Rooms</a></li>
                         <li class="nav-item"><a href="{{route('dining')}}" class="nav-link">Dining &amp; Bar</a></li>
-                        <li class="nav-item"><a href="{{ url('/booking') }}" class="nav-link">Booking</a></li>
+                        <li class="nav-item"><a href="{{ route('reserve') }}" class="nav-link">Booking</a></li>
                         @guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
@@ -173,6 +173,8 @@
                 scrollTop: $("#downhere").offset().top
             }, 1600);
         } 
+
+
     </script>
 </body>
 </html>

@@ -59,7 +59,7 @@
                         <li class="nav-item active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route('room')}}">Rooms</a></li>
                         <li class="nav-item"><a href="{{route('dining')}}" class="nav-link">Dining &amp; Bar</a></li>
-                        <li class="nav-item"><a href="{{ url('/booking') }}" class="nav-link">Booking</a></li>
+                        <li class="nav-item"><a href="{{ route('reserve') }}" class="nav-link">Booking</a></li>
                         @guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
