@@ -57,9 +57,9 @@
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{route('room')}}">Rooms</a></li>
-                        <li class="nav-item"><a href="{{route('dining')}}" class="nav-link">Dining &amp; Bar</a></li>
-                        <li class="nav-item"><a href="{{ route('reserve') }}" class="nav-link">Booking</a></li>
+                        <li class="nav-item" onclick="clickStat(this)"><a class="nav-link" href="{{route('room')}}">Rooms</a></li>
+                        <li class="nav-item" onclick="clickStat(this)"><a href="{{route('dining')}}" class="nav-link">Dining &amp; Bar</a></li>
+                        <li class="nav-item" onclick="clickStat(this)"><a href="{{ route('reserve') }}" class="nav-link">Booking</a></li>
                         @guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
@@ -174,7 +174,9 @@
             }, 1600);
         } 
 
-
+        function clickStat(event) {
+            console.log(event)
+        }
     </script>
 </body>
 </html>
