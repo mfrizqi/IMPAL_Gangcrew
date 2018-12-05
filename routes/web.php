@@ -37,9 +37,7 @@ Route::get('/payment',function(){
     return view('payment');
 });
 
-Route::get('/admin', function() {
-    return view('admin');
-});
+Route::get('/admin', 'AdminController@index');
 
 Auth::routes();
 
