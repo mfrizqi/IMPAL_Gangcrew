@@ -36,10 +36,8 @@ class KamarController extends Controller
     public function store(Request $request)
     {
         $Kamar = new Kamar;
-        $Kamar->id_kamar = $request->id;
-        $Kamar->jenis_kamar = $request->Jenis;
+        $Kamar->jenis_kamar = $request->jenis;
         $Kamar->harga_kamar = $request->harga;
-        $Kamar->status_kamar = $request->Status;
 
         $Kamar->save();
 

@@ -38,7 +38,8 @@
                         <div class="card-body">
                             <i class="fas fa-chart-line" style="font-size: 5rem"></i>
                             <p class="card-text mb-4" style="font-size: 1.2rem">Statistik</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#statistik">Lihat detail</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#statistik">Lihat
+                                detail</button>
                         </div>
                     </div>
                 </div>
@@ -165,6 +166,11 @@
     </section>
 </div>
 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000">
+    <i class="fas fa-plus"></i> Tambah data
+</button>
+
+
 <!-- The Modal -->
 <div class="modal" id="statistik">
     <div class="modal-dialog">
@@ -179,6 +185,85 @@
             <!-- Modal body -->
             <div class="modal-body">
                 <canvas id="performa"></canvas>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="input">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Tambah data</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <!-- Nav pills -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#inputKamar">Kamar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#inputPegawai">Pegawai</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="inputKamar">
+                        <br>
+                        <form action="{{route('kamar.store')}}" method="POST">
+                            @csrf
+                            <div class="form-group">
+                                <select name="jenis" id="jenis" class="form-control">
+                                    <option value="Bronze">Bronze</option>
+                                    <option value="Silver">Silver</option>
+                                    <option value="Gold">Gold</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="harga" class="form-control" placeholder="Harga">
+                            </div>
+                            <button type="submit" class="btn btn-success">Rekam data</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane container fade" id="inputPegawai">
+                        <br>
+                        <form action="{{route('user.store')}}" method="POST">
+                            @csrf
+                            <div class="form-group">
+                                <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email_user" class="form-control" placeholder="Alamat surel" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control" required>Alamat</textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="umr" class="form-control" placeholder="Umur" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="tlp" class="form-control" placeholder="No. Telpon" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="gji" class="form-control" placeholder="Gaji" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Rekam data</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <!-- Modal footer -->
@@ -209,5 +294,6 @@
         // Configuration options go here
         options: {}
     });
+
 </script>
 @endsection

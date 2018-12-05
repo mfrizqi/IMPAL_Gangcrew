@@ -17,7 +17,7 @@ class CreateKamarsTable extends Migration
             $table->increments('id');
             $table->string('jenis_kamar');
             $table->double('harga_kamar');
-            $table->string('status_kamar');
+            $table->boolean('status_kamar')->default(false);
             $table->timestamps();
         });
     }

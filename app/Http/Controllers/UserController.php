@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -35,21 +36,20 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $User = new User;
-        $User->id = $request->id;
-        $User->name = $request->nama;
-        $User->email = $request->email_user;
-        $User->password = $request->pass;
-        $User->alamat = $request->almt;
-        $User->role = 2;
-        $User->umur = $request->umr;
-        $User->no_tlp = $request->tlp;
-        $User->gaji = $request->gji;
+        $user = new User;
+        $user->name = $request->nama;
+        $user->email = $request->email_user;
+        $user->password = Hash::make('secret');
+        $user->alamat = $request->almt;
+        $user->role = 2;
+        $user->umur = $request->umr;
+        $user->no_tlp = $request->tlp;
+        $user->gaji = $request->gji;
 
-        $Kamar->save();
+        $user->save();
 
-        if($Kamar->save()){
-            return back()->with('succes','User Berhasil Ditambahkan');
+        if($user->save()){
+            return back()->with('success','User Berhasil Ditambahkan');
         }
         else{
             return back()->with('danger','User Gagal Ditambahkan');
