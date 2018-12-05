@@ -11,7 +11,9 @@ class Memesan extends Model
         'id_user',
         'jenis_kamar',
         'harga',
-        'status'];
+        'status',
+        'Checkin',
+        'Checkout'];
     function kamar(){
         return $this->belongsTo(Kamar::class);
     }

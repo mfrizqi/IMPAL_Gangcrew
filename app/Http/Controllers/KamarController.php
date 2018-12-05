@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kamar;
+use App\Memesan;
+use Carbon\Carbon;
 
 class KamarController extends Controller
 {
@@ -12,10 +14,11 @@ class KamarController extends Controller
         $r = $req->query();
         $in = $r['checkin'];
         $out = $r['checkout'];
-        $kamar = impal::table('memesans')->whereBetween('Chekin',[$in,$out])->get();
+        $kamar = Memesan::whereNotBetween('Checkin', [$in,$out])->get();
+        // dd($kamar);
         return view('checkroom', [
             'r' => $r,
-            kamar => $kamar
+            'kamar' => $kamar
         ]);
     }
     /**
