@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <i class="fas fa-chart-line" style="font-size: 5rem"></i>
                             <p class="card-text mb-4" style="font-size: 1.2rem">Statistik</p>
-                            <button class="btn btn-primary">Lihat detail</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#statistik">Lihat detail</button>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             <br>
             <div class="card">
                 <div class="card-body">
-                    <ul class="nav nav-pills">
+                    <ul class="nav nav-pills d-flex justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="pill" href="#kamar"><i class="far fa-building"></i>
                                 Kamar</a>
@@ -164,4 +164,50 @@
         </div>
     </section>
 </div>
+
+<!-- The Modal -->
+<div class="modal" id="statistik">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Statistik</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <canvas id="performa"></canvas>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var ctx = document.getElementById('performa').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "Booking",
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [0, 10, 5, 2, 20, 30, 45],
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+</script>
 @endsection
