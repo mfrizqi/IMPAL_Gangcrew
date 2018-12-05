@@ -10,7 +10,9 @@ class Kamar extends Model
         'jenis_kamar',
         'harga_kamar',
         'status_kamar'];
+
     function memesan(){
         return $this->hasMany(Memesan::class);
     }
+    
 }

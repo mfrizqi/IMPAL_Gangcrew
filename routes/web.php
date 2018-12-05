@@ -37,6 +37,10 @@ Route::get('/payment',function(){
     return view('payment');
 });
 
+Route::get('/admin', function() {
+    return view('admin');
+});
+
 Auth::routes();
 
 // Route::get('/react', function() {

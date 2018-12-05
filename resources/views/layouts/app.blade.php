@@ -48,7 +48,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html">{{env('APP_NAME')}}</a>
+                <a class="navbar-brand" href="index.html"><i class="fab fa-accusoft"></i> {{env('APP_NAME')}}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="oi oi-menu"></span>
@@ -56,13 +56,13 @@
                 <!-- D:\xampp\htdocs\IMPAL_Gangcrew\public\image\bg_1.jpg -->
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item {{url()->current() == route('home') ? 'active' : ''}}"><a href="{{route('home')}}" class="nav-link">Home</a></li>
-                        <li class="nav-item {{url()->current() == route('room') ? 'active' : ''}}"><a class="nav-link" href="{{route('room')}}">Rooms</a></li>
-                        <li class="nav-item {{url()->current() == route('dining') ? 'active' : ''}}"><a href="{{route('dining')}}" class="nav-link">Dining &amp; Bar</a></li>
-                        <li class="nav-item {{url()->current() == route('reserve') ? 'active' : ''}}"><a href="{{ route('reserve') }}" class="nav-link">Booking</a></li>
+                        <li class="nav-item {{url()->current() == route('home') ? 'active' : ''}}"><a href="{{route('home')}}" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item {{url()->current() == route('room') ? 'active' : ''}}"><a class="nav-link" href="{{route('room')}}"><i class="far fa-building"></i> Rooms</a></li>
+                        <li class="nav-item {{url()->current() == route('dining') ? 'active' : ''}}"><a href="{{route('dining')}}" class="nav-link"><i class="fas fa-utensils"></i> Dining &amp; Bar</a></li>
+                        <li class="nav-item {{url()->current() == route('reserve') ? 'active' : ''}}"><a href="{{ route('reserve') }}" class="nav-link"><i class="fas fa-address-book"></i> Booking</a></li>
                         @guest
-                        <li class="nav-item {{url()->current() == route('login') ? 'active' : ''}}"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                        <li class="nav-item {{url()->current() == route('register') ? 'active' : ''}}"><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                        <li class="nav-item {{url()->current() == route('login') ? 'active' : ''}}"><a class="nav-link" href="{{ route('login') }}"><i class="fas fa-user"></i> {{ __('Login') }}</a></li>
+                        <li class="nav-item {{url()->current() == route('register') ? 'active' : ''}}"><a class="nav-link" href="{{ route('register') }}"><i class="fas fa-sign-in-alt"></i> {{ __('Register') }}</a></li>
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -95,7 +95,7 @@
                     <div class="row mb-5">
                         <div class="col-md">
                             <div class="ftco-footer-widget mb-4">
-                                <h2 class="ftco-heading-2">Cozy</h2>
+                                <h2 class="ftco-heading-2">{{env('APP_NAME')}}</h2>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
                                     live the blind texts.</p>
                                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
