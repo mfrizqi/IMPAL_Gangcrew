@@ -54,6 +54,11 @@ class KamarController extends Controller
         $Kamar->jenis_kamar = $request->jenis;
         $Kamar->harga_kamar = $request->harga;
 
+        $gambar = $request->file('foto_kamar');
+        $namaFile = $gambar->getClientOriginalName();
+        $request->file('foto_kamar')->move('image/kamar', $namaFile);
+        $Kamar->foto_kamar = $namaFile;
+
         $Kamar->save();
 
         if($Kamar->save()){
@@ -97,19 +102,22 @@ class KamarController extends Controller
     public function update(Request $request, $id)
     {
         $Kamar = Kamar::findOrFail($id);
-        $Kamar->id_kamar = $request->id;
-        $Kamar->jenis_kamar = $request->Jenis;
+        $Kamar->jenis_kamar = $request->jenis;
         $Kamar->harga_kamar = $request->harga;
-        $Kamar->status_kamar = $request->Status;
+
+        $gambar = $request->file('foto_kamar');
+        $namaFile = $gambar->getClientOriginalName();
+        $request->file('foto_kamar')->move('image/kamar', $namaFile);
+        $Kamar->foto_kamar = $namaFile;
 
         $Kamar->save();
 
         if($Kamar->save()){
-            return back()->with('success','Kamar Berhasil Diupdate');
+            return back()->with('success','Kamar Berhasil diperbarui');
         }
         else{
-            return back()->with('danger','Kamar Gagal Diupdate');
-        }  
+            return back()->with('danger','Kamar Gagal diperbarui');
+        }
     }
 
     /**
@@ -121,12 +129,7 @@ class KamarController extends Controller
     public function destroy($id)
     {
         $Kamar = Kamar::findOrFail($id);
-        if($Kamar->jenis_kamar == 'false'){
-            $Kamar->delete();
-            return back()->with('succes','Kamar Berhasil Dihapus');
-        }
-        else{
-            return back()->with('succes','Kamar Gagal Dihapus');
-        }
+        $Kamar->delete();
+        return back()->with('success','Kamar Berhasil Dihapus');
     }
 }

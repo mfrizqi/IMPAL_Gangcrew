@@ -65,19 +65,20 @@
                     <div class="tab-content">
                         <div class="tab-pane container active pt-4" id="kamar">
                             <div class="row">
+                                @foreach($kamars as $k)
                                 <div class="col-md-4 ftco-animate">
                                     <div class="room-wrap">
-                                        <a href="#" class="room-img" style="background-image: url(image/room-1.jpg);"></a>
+                                        <a href="#" class="room-img" style="background-image: url(image/kamar/{{$k->foto_kamar}});"></a>
                                         <div class="text p-4">
                                             <div class="d-flex mb-1">
                                                 <div class="one-third">
                                                     <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
                                                             class="icon-star"></span><span class="icon-star"></span><span
                                                             class="icon-star-half-full"></span></p>
-                                                    <h3><a href="#">Luxury Room</a></h3>
+                                                    <h3><a href="#">{{$k->jenis_kamar}} Room</a></h3>
                                                 </div>
                                                 <div class="one-forth text-center">
-                                                    <p class="price">$99 <br><span>/night</span></p>
+                                                    <p class="price">Rp. {{$k->harga_kamar}} <br><span>/night</span></p>
                                                 </div>
                                             </div>
                                             <p class="features">
@@ -91,70 +92,81 @@
                                                     facilities</span>
                                                 <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                             </p>
-                                            <p><a href="#" class="btn btn-primary">Kelola kamar</a></p>
+                                            <p><a href="#kelola" class="btn btn-primary" data-toggle="modal">Kelola kamar</a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 ftco-animate">
-                                    <div class="room-wrap">
-                                        <a href="#" class="room-img" style="background-image: url(image/room-2.jpg);"></a>
-                                        <div class="text p-4">
-                                            <div class="d-flex mb-1">
-                                                <div class="one-third">
-                                                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                                                            class="icon-star"></span><span class="icon-star"></span><span
-                                                            class="icon-star-half-full"></span></p>
-                                                    <h3><a href="#">Family Room</a></h3>
-                                                </div>
-                                                <div class="one-forth text-center">
-                                                    <p class="price">$99 <br><span>/night</span></p>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="kelola">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Kelola kamar</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!-- Nav pills -->
+                                                <ul class="nav nav-pills">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiKamar">Perbarui</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#hapusKamar">Hapus</a>
+                                                    </li>
+                                                </ul>
+
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="perbaruiKamar">
+                                                        <br>
+                                                        <form action="{{route('kamar.update', $k->id)}}" method="POST"
+                                                            enctype="multipart/form-data">
+                                                            @csrf
+                                                            @method('PATCH')
+                                                            <div class="form-group">
+                                                                <select name="jenis" id="jenis" class="form-control">
+                                                                    <option value="Bronze">Bronze</option>
+                                                                    <option value="Silver">Silver</option>
+                                                                    <option value="Gold">Gold</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="foto">Unggah foto kamar: </label>
+                                                                <input type="file" name="foto_kamar" id="foto" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" name="harga" class="form-control"
+                                                                placeholder="Harga" value="{{$k->harga_kamar}}">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-success">Rekam data</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="hapusKamar">
+                                                        <br>
+                                                        <form action="{{route('kamar.destroy', $k->id)}}" method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <p>Apakah anda yakin ?</p>
+                                                            <button type="submit" class="btn btn-danger">Ya</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <p class="features">
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for
-                                                    traveling couples</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast
-                                                    included</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double
-                                                    beds</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting
-                                                    facilities</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                                            </p>
-                                            <p><a href="#" class="btn btn-primary">Kelola kamar</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 ftco-animate">
-                                    <div class="room-wrap">
-                                        <a href="#" class="room-img" style="background-image: url(image/room-3.jpg);"></a>
-                                        <div class="text p-4">
-                                            <div class="d-flex mb-1">
-                                                <div class="one-third">
-                                                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
-                                                            class="icon-star"></span><span class="icon-star"></span><span
-                                                            class="icon-star-half-full"></span></p>
-                                                    <h3><a href="#">Deluxe Room</a></h3>
-                                                </div>
-                                                <div class="one-forth text-center">
-                                                    <p class="price">$99 <br><span>/night</span></p>
-                                                </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                             </div>
-                                            <p class="features">
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for
-                                                    traveling couples</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast
-                                                    included</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double
-                                                    beds</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting
-                                                    facilities</span>
-                                                <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
-                                            </p>
-                                            <p><a href="#" class="btn btn-primary">Kelola kamar</a></p>
+
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="tab-pane container fade pt-4" id="pegawai">...</div>
@@ -223,7 +235,7 @@
                 <div class="tab-content">
                     <div class="tab-pane container active" id="inputKamar">
                         <br>
-                        <form action="{{route('kamar.store')}}" method="POST">
+                        <form action="{{route('kamar.store')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <select name="jenis" id="jenis" class="form-control">
@@ -231,6 +243,10 @@
                                     <option value="Silver">Silver</option>
                                     <option value="Gold">Gold</option>
                                 </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="foto">Unggah foto kamar: </label>
+                                <input type="file" name="foto_kamar" id="foto" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="number" name="harga" class="form-control" placeholder="Harga">
@@ -246,7 +262,8 @@
                                 <input type="text" name="nama" class="form-control" placeholder="Nama" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email_user" class="form-control" placeholder="Alamat surel" required>
+                                <input type="email" name="email_user" class="form-control" placeholder="Alamat surel"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control" required>Alamat</textarea>
