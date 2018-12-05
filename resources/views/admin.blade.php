@@ -13,21 +13,21 @@
                         <div class="card">
                             <div class="card-body">
                                 <i class="far fa-building" style="font-size: 5rem"></i>
-                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">12</p>
+                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$ck}}</p>
                                 <p class="card-text" style="font-size: 1.2rem">Kamar</p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <i class="fas fa-user-tie" style="font-size: 5rem"></i>
-                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">25</p>
+                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$cp}}</p>
                                 <p class="card-text" style="font-size: 1.2rem">Pegawai</p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <i class="fas fa-users" style="font-size: 5rem"></i>
-                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">10</p>
+                                <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$ct}}</p>
                                 <p class="card-text" style="font-size: 1.2rem">Tamu</p>
                             </div>
                         </div>

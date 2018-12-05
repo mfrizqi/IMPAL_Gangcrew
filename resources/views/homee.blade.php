@@ -44,34 +44,33 @@
         <div class="row justify-content-end ftco-animate mr-md-3 mr-0">
             <div class="col-lg-4 col-md-5 reservation p-md-5">
                 <div class="block-17">
-                    <form action="" method="post" class="d-block">
+                    <form action="{{route('checkroom')}}" method="GET" class="d-block">
                         <div class="fields d-block">
 
                             <div class="book-date one-third">
                                 <label for="check-in">Check in:</label>
-                                <input type="text" id="checkin_date" class="form-control" placeholder="M/D/YYYY">
+                                <input type="text" name="checkin" id="checkin_date" class="form-control" placeholder="M/D/YYYY" required>
                             </div>
 
                             <div class="book-date one-third">
                                 <label for="check-out">Check out:</label>
-                                <input type="text" id="checkout_date" class="form-control" placeholder="M/D/YYYY">
+                                <input type="text" name="checkout" id="checkout_date" class="form-control" placeholder="M/D/YYYY" required>
                             </div>
 
                             <div class="one-third">
                                 <label for="Guest">Guest:</label>
                                 <div class="select-wrap">
                                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4+</option>
+                                    <select name="person" id="person" class="form-control" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <input type="submit" class="search-submit btn btn-primary" value="Check Availability">
-                        <p><a href="{{route('checkroom')}}" class="btn btn-primary">Check Availability</a></p>
                     </form>
                 </div>
             </div>

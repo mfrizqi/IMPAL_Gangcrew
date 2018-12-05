@@ -7,6 +7,13 @@ use App\Kamar;
 
 class KamarController extends Controller
 {
+
+    public function checkroom(Request $req) {
+        $r = $req->query();
+        return view('checkroom', [
+            'r' => $r
+        ]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +21,8 @@ class KamarController extends Controller
      */
     public function index()
     {
-        //
+        // #GAY
+        
     }
 
     /**

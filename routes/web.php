@@ -13,9 +13,7 @@ use App\User;
 |
 */
 
-Route::get('/', function () {
-    return view('homee');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/room', function () {
     return view('room');
@@ -25,13 +23,7 @@ Route::get('/dining', function () {
     return view('dining');
 })->name('dining');
 
-Route::get('/checkroom', function () {
-    return view('checkroom');
-});
-
-Route::get('/checkroom', function () {
-    return view('checkroom');
-})->name('checkroom');
+Route::get('/checkroom', 'KamarController@checkroom')->name('checkroom');
 
 Route::get('/reserve',function(){
     return view('reserve');
