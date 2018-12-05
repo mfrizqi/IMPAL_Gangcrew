@@ -16,7 +16,7 @@ class MemesansTableSeeder extends Seeder
         Memesan::insert([
             'id_kamar' => 1,
             'id_user' => 1,
-            'jenis_kamar' => 'VIP',
+            'jenis_kamar' => 'Bronze',
             'harga' => 1000000,
             'status' => false,
             'checkin' => '2018-12-5',

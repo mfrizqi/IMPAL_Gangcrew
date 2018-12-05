@@ -12,13 +12,28 @@ class KamarController extends Controller
 
     public function checkroom(Request $req) {
         $r = $req->query();
-        $in = $r['checkin'];
-        $out = $r['checkout'];
-        $kamar = Memesan::whereNotBetween('Checkin', [$in,$out])->get();
-        // dd($kamar);
+        $inn = Carbon::createFromFormat('m/d/Y', $r['checkin'])->toDateString();
+        $i = date($inn);
+        $int = Carbon::createFromFormat('m/d/Y', $r['checkout'])->toDateString();
+        $o = date($int);
+        $memesan = Memesan::where([
+            ['checkin', '>=', $i],
+            ['checkin', '<=', $o],
+        ])->orWhere([
+            ['checkin', '<=', $i],
+            ['checkout', '>=', $o],
+        ])->orWhere([
+            ['checkin', '<=', $i],
+            ['checkout', '>=', $i],
+        ])->get();
+        // dd($memesan);
+        $kamar = Kamar::all();
+        $i = 0;
         return view('checkroom', [
             'r' => $r,
-            'kamar' => $kamar
+            'memesan' => $memesan,
+            'kamar' => $kamar,
+            'i' => $i
         ]);
     }
     /**
