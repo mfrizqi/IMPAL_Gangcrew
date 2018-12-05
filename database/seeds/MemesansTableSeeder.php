@@ -18,7 +18,6 @@ class MemesansTableSeeder extends Seeder
             'id_user' => 1,
             'jenis_kamar' => 'VIP',
             'harga' => 1000000,
-            'status' => 'false',
             'created_at' => Carbon::now()
         ]);
     }

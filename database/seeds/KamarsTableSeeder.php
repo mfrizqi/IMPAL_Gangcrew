@@ -4,6 +4,8 @@ use Illuminate\Database\Seeder;
 
 use App\Kamar;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+
 class KamarsTableSeeder extends Seeder
 {
     /**

@@ -14,14 +14,14 @@ class CreateMemesansTable extends Migration
     public function up()
     {
         Schema::create('memesans', function (Blueprint $table) {
-            $table->increments('id_memesan');
+            $table->increments('id');
             $table->integer('id_kamar')->unsigned();
             $table->integer('id_user')->unsigned();
             $table->string('jenis_kamar');
             $table->double('harga');
-            $table->string('status');
+            $table->boolean('status')->default(false);
             $table->foreign('id_kamar')
-                ->references('id_kamar')
+                ->references('id')
                 ->on('kamars')
                 ->onDelete('cascade');
             $table->foreign('id_user')
