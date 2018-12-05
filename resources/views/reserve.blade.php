@@ -71,14 +71,14 @@
                                     <p style="font-weight: 800; color:#404044">Nama Kamar hotel</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <p style="font-weight: 800; color:#404044" class="text-right">Harga hotel
-                                        Rp12909102</p>
+                                    <p style="font-weight: 800; color:#404044" class="text-right">Harga hotel Rp.
+                                        {{$harga}}</p>
                                 </div>
                                 <div class="col-md-8">
                                     <p style="font-weight: 800; color:#404044">Taxes</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <p style="font-weight: 800; color:#404044" class="text-right">Rp12909102</p>
+                                    <p style="font-weight: 800; color:#404044" class="text-right">Rp.{{($harga*10)/100}}</p>
                                 </div>
                             </div>
                         </div>

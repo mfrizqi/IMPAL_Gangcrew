@@ -25,9 +25,7 @@ Route::get('/dining', function () {
 
 Route::get('/checkroom', 'KamarController@checkroom')->name('checkroom');
 
-Route::get('/reserve',function(){
-    return view('reserve');
-})->name('reserve');
+Route::get('/reserve', 'MemesanController@reserve')->name('reserve');
 
 Route::get('/payment',function(){
     return view('payment');

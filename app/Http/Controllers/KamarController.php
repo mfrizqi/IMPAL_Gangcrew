@@ -26,7 +26,6 @@ class KamarController extends Controller
             ['checkin', '<=', $i],
             ['checkout', '>=', $i],
         ])->get();
-        // dd($memesan);
         $kamar = Kamar::all();
         $i = 0;
         return view('checkroom', [

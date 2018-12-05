@@ -102,7 +102,7 @@
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                 </p> -->
-                            <p><a href="{{route('reserve')}}" class="btn btn-primary">Reserve a room</a></p>
+                            <p><a href="{{route('reserve',['checkin'=>$r['checkin'], 'checkout'=>$r['checkout'], 'harga'=>$km->harga_kamar])}}" class="btn btn-primary">Reserve a room</a></p>
                         </div>
                     </div>
                 </div>

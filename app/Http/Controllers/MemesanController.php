@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Memesan;
+use Carbon\Carbon;
 
 
 class MemesanController extends Controller
@@ -13,6 +14,20 @@ class MemesanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function reserve(Request $req){
+        $r = $req->query();
+        $end = Carbon::parse($r['checkout']);
+        $start = Carbon::parse($r['checkin']);
+        $length = $end->diffInDays($start);
+        $hasil = ($length + 1) * $r['harga'];
+        // dd($hasil);
+        return view('reserve',[
+            'r' => $r,
+            'harga' => $hasil
+        ]);
+    }
+
     public function index()
     {
         $Memesan = Memesan::orderBy('id_memesan','desc')->get();
