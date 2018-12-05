@@ -4,7 +4,7 @@
 
 @section("content")
 <div style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_3.jpg');background-size: cover;">
-    <section class="ftco-section mt-0">
+    <section class="ftco-section mt-0" style="padding: 5em 0 2em 0 !important">
         <div class="container">
             <h1 class="text-center mb-5 pt-5" style="color: white">Reservation room</h1>
             <div class="row d-flex justify-content-center">
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="ftco-section mt-0" style="padding: 3em 0 5em 0 !important">
+    <section class="ftco-section mt-0" style="padding: 2em 0 5em 0 !important">
         <div class="container">
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-12 ftco-animate makereservation p-5 bg-light" style="border-left: 4px solid #ff6138">
@@ -85,7 +85,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-12">
-                            <button class="btn btn-primary mt-5">Continue to Payment</button>
+                            <!-- <button class="btn btn-primary mt-5">Continue to Payment</button> -->
+                            <p><a href="{{route('payment')}}" class="btn btn-primary">Continue to Payment</a></p>
                         </div>
                     </div>
                 </div>

@@ -71,6 +71,7 @@
                             </div>
                         </div>
                         <input type="submit" class="search-submit btn btn-primary" value="Check Availability">
+                        <p><a href="{{route('checkroom')}}" class="btn btn-primary">Check Availability</a></p>
                     </form>
                 </div>
             </div>
@@ -237,7 +238,7 @@
                                         facilities</span>
                                     <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                 </p>
-                                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
+                                <p><a href="{{route('checkroom')}}" class="btn btn-primary">Reserve a room</a></p>
                             </div>
                         </div>
                     </div>
@@ -264,7 +265,7 @@
                                         facilities</span>
                                     <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                 </p>
-                                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
+                                <p><a href="{{route('checkroom')}}" class="btn btn-primary">Reserve a room</a></p>
                             </div>
                         </div>
                     </div>
@@ -291,7 +292,7 @@
                                         facilities</span>
                                     <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                 </p>
-                                <p><a href="#" class="btn btn-primary">Reserve a room</a></p>
+                                <p><a href="{{route('checkroom')}}" class="btn btn-primary">Reserve a room</a></p>
                             </div>
                         </div>
                     </div>

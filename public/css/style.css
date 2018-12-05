@@ -9168,3 +9168,16 @@ textarea.form-control {
       background: #FFF;
       color: #ff6138;
       border: 2px solid #FFF; }
+
+      .roomQty{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .roomLeft{
+        color: #e64d5c;
+        font-size: 1em;
+        font-weight: 600;
+      }
