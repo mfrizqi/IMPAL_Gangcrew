@@ -10,9 +10,12 @@ class KamarController extends Controller
 
     public function checkroom(Request $req) {
         $r = $req->query();
-        
+        $in = $r['checkin'];
+        $out = $r['checkout'];
+        $kamar = impal::table('memesans')->whereBetween('Chekin',[$in,$out])->get();
         return view('checkroom', [
-            'r' => $r
+            'r' => $r,
+            kamar => $kamar
         ]);
     }
     /**

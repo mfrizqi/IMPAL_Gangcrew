@@ -20,6 +20,8 @@ class CreateMemesansTable extends Migration
             $table->string('jenis_kamar');
             $table->double('harga');
             $table->boolean('status')->default(false);
+            $table->date('Checkin');
+            $table->date('Checkout');
             $table->foreign('id_kamar')
                 ->references('id')
                 ->on('kamars')
