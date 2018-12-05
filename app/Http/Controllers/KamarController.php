@@ -10,6 +10,7 @@ class KamarController extends Controller
 
     public function checkroom(Request $req) {
         $r = $req->query();
+        
         return view('checkroom', [
             'r' => $r
         ]);

@@ -17,6 +17,7 @@ class KamarsTableSeeder extends Seeder
     {
         Kamar::insert([
             'jenis_kamar' => 'VIP',
+            'foto_kamar' => 'hello.jpg',
             'harga_kamar' => 1000000,
             'status_kamar' => false,
             'created_at' => Carbon::now()
