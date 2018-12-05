@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Memesan;
 
 class MemesanController extends Controller
 {
@@ -13,7 +14,8 @@ class MemesanController extends Controller
      */
     public function index()
     {
-        //
+        $Memesan = Memesan::orderBy('id_memesan','desc')->get();
+
     }
 
     /**
@@ -34,7 +36,22 @@ class MemesanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $Memesan = new Memesan;
+        $Memesan->id_memesan = $request->id;
+        $Memesan->id_kamar = $request->id_kamar;
+        $Memesan->id_user = $request->id_user;
+        $Memesan->jenis_kamar = $request->jenis;
+        $Memesan->harga = $request->harga;
+        $Memesan->status = $request->status;
+
+        $Kamar->save();
+
+        if($Kamar->save()){
+            return back()->with('success','Memesan Berhasil Dibuat');
+        }
+        else{
+            return back()->with('danger','Memesan Gagal Dibuat');
+        }
     }
 
     /**
@@ -68,7 +85,22 @@ class MemesanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $Memesan = Memesan::findorFail($id);
+        $Memesan->id_memesan = $request->id;
+        $Memesan->id_kamar = $request->id_kamar;
+        $Memesan->id_user = $request->id_user;
+        $Memesan->jenis_kamar = $request->jenis;
+        $Memesan->harga = $request->harga;
+        $Memesan->status = $request->status;
+
+        $Kamar->save();
+
+        if($Kamar->save()){
+            return back()->with('success','Pesanan Berhasil Diupdate');
+        }
+        else{
+            return back()->with('danger','Pesanan Gagal Diupdate');
+        }
     }
 
     /**
@@ -79,6 +111,6 @@ class MemesanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Memesan::findorFail($id)->delete();
     }
 }

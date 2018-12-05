@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','alamat','role','umur','no_tlp','gaji'
     ];
 
     /**
@@ -28,5 +28,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    function memesan(){
+        return $this->hasOne(Memesan::class);
+    } 
     
 }
