@@ -29,13 +29,17 @@ Route::get('/checkroom', function () {
     return view('checkroom');
 });
 
+Route::get('/checkroom', function () {
+    return view('checkroom');
+})->name('checkroom');
+
 Route::get('/reserve',function(){
     return view('reserve');
 })->name('reserve');
 
 Route::get('/payment',function(){
     return view('payment');
-});
+})->name('payment');
 
 Route::get('/admin', function() {
     return view('admin');
