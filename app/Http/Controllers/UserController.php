@@ -88,18 +88,16 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         $User = User::findorFail($id);
-        $User->id = $request->id;
         $User->name = $request->nama;
         $User->email = $request->email_user;
-        $User->password = $request->pass;
         $User->alamat = $request->almt;
         $User->umur = $request->umr;
         $User->no_tlp = $request->tlp;
         $User->gaji = $request->gji;
 
-        $Kamar->save();
+        $User->save();
 
-        if($Kamar->save()){
+        if($User->save()){
             return back()->with('succes','User Berhasil Diupdate');
         }
         else{
@@ -116,5 +114,6 @@ class UserController extends Controller
     public function destroy($id)
     {
         User::findorFail($id)->delete();
+        return back()->with('success', 'Pegawai berhasil dihapus');
     }
 }
