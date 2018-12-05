@@ -92,13 +92,14 @@
                                                     facilities</span>
                                                 <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                             </p>
-                                            <p><a href="#kelola" class="btn btn-primary" data-toggle="modal">Kelola kamar</a></p>
+                                            <p><a href="#kelola{{$k->id}}" class="btn btn-primary" data-toggle="modal">Kelola
+                                                    kamar</a></p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- The Modal -->
-                                <div class="modal" id="kelola">
+                                <div class="modal" id="kelola{{$k->id}}">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
 
@@ -141,7 +142,7 @@
                                                             </div>
                                                             <div class="form-group">
                                                                 <input type="number" name="harga" class="form-control"
-                                                                placeholder="Harga" value="{{$k->harga_kamar}}">
+                                                                    placeholder="Harga" value="{{$k->harga_kamar}}">
                                                             </div>
                                                             <button type="submit" class="btn btn-success">Rekam data</button>
                                                         </form>
@@ -169,8 +170,205 @@
                                 @endforeach
                             </div>
                         </div>
-                        <div class="tab-pane container fade pt-4" id="pegawai">...</div>
-                        <div class="tab-pane container fade pt-4" id="tamu">...</div>
+                        <div class="tab-pane container fade pt-4" id="pegawai">
+                            <div class="row">
+                                @foreach($pegawai as $p)
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="https://gravatar.com/avatar/{{encrypt($p->email)}}" alt="avatar"
+                                                    style="width: 100px; height: 100px; border-radius: 50%">
+                                                <p class="card-text mt-3 mb-0" style="font-size: 2rem">{{$p->name}}</p>
+                                                <p class="card-text" style="font-size: 1.5rem">{{$p->email}}</p>
+                                                <p><a href="#kelolaPegawai{{$p->id}}" class="btn btn-primary" data-toggle="modal">Kelola
+                                                        pegawai</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="kelolaPegawai{{$p->id}}">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Kelola pegawai</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <!-- Nav pills -->
+                                                <ul class="nav nav-pills">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiPegawai">Perbarui</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="pill" href="#hapusPegawai">Hapus</a>
+                                                    </li>
+                                                </ul>
+
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="perbaruiPegawai">
+                                                        <br>
+                                                        <form action="{{route('user.update', $p->id)}}" method="POST">
+                                                            @csrf
+                                                            @method('PATCH')
+                                                            <div class="form-group">
+                                                                <input type="text" name="nama" class="form-control"
+                                                                    placeholder="Nama" value="{{$p->name}}" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="email" name="email_user" class="form-control"
+                                                                    placeholder="Alamat surel" value="{{$p->email}}"
+                                                                    required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea name="almt" id="alamat" cols="30" rows="10"
+                                                                    class="form-control" value="{{$p->alamat}}"
+                                                                    required>Alamat</textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" name="umr" class="form-control"
+                                                                    placeholder="Umur" value="{{$p->umur}}" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" name="tlp" class="form-control"
+                                                                    placeholder="No. Telpon" value="{{$p->no_tlp}}"
+                                                                    required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" name="gji" class="form-control"
+                                                                    placeholder="Gaji" value="{{$p->gaji}}" required>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-success">Perbarui data</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="hapusPegawai">
+                                                        <br>
+                                                        <form action="{{route('user.destroy', $p->id)}}" method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <p>Apakah anda yakin ?</p>
+                                                            <button type="submit" class="btn btn-danger">Ya</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade pt-4" id="tamu">
+                            @foreach($tamu as $p)
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="https://gravatar.com/avatar/{{encrypt($p->email)}}" alt="avatar"
+                                                style="width: 100px; height: 100px; border-radius: 50%">
+                                            <p class="card-text mt-3 mb-0" style="font-size: 2rem">{{$p->name}}</p>
+                                            <p class="card-text" style="font-size: 1.5rem">{{$p->email}}</p>
+                                            <p><a href="#kelolaTamu{{$p->id}}" class="btn btn-primary" data-toggle="modal">Kelola
+                                                    tamu</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="kelolaTamu{{$p->id}}">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Kelola tamu</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <!-- Nav pills -->
+                                            <ul class="nav nav-pills">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" data-toggle="pill" href="#perbaruiTamu">Perbarui</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="pill" href="#hapusTamu">Hapus</a>
+                                                </li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane container active" id="perbaruiTamu">
+                                                    <br>
+                                                    <form action="{{route('user.update', $p->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('PATCH')
+                                                        <div class="form-group">
+                                                            <input type="text" name="nama" class="form-control"
+                                                                placeholder="Nama" value="{{$p->name}}" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" name="email_user" class="form-control"
+                                                                placeholder="Alamat surel" value="{{$p->email}}"
+                                                                required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control"
+                                                                value="{{$p->alamat}}" required>Alamat</textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="number" name="umr" class="form-control"
+                                                                placeholder="Umur" value="{{$p->umur}}" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="number" name="tlp" class="form-control"
+                                                                placeholder="No. Telpon" value="{{$p->no_tlp}}"
+                                                                required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="number" name="gji" class="form-control"
+                                                                placeholder="Gaji" value="{{$p->gaji}}" required>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-success">Perbarui data</button>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane container fade" id="hapusTamu">
+                                                    <br>
+                                                    <form action="{{route('user.destroy', $p->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <p>Apakah anda yakin ?</p>
+                                                        <button type="submit" class="btn btn-danger">Ya</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
