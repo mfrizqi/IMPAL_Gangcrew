@@ -60,7 +60,7 @@
                         <li class="nav-item {{url()->current() == route('home') ? 'active' : ''}}"><a href="{{route('home')}}" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
                         <li class="nav-item {{url()->current() == route('room') ? 'active' : ''}}"><a class="nav-link" href="{{route('room')}}"><i class="far fa-building"></i> Rooms</a></li>
                         <li class="nav-item {{url()->current() == route('dining') ? 'active' : ''}}"><a href="{{route('dining')}}" class="nav-link"><i class="fas fa-utensils"></i> Dining &amp; Bar</a></li>
-                        <li class="nav-item {{url()->current() == route('reserve') ? 'active' : ''}}"><a href="{{ route('reserve') }}" class="nav-link"><i class="fas fa-address-book"></i> Booking</a></li>
+                        <li class="nav-item {{url()->current() == route('reserve') ? 'active' : ''}}"><a href="{{ route('payment') }}" class="nav-link"><i class="fas fa-address-book"></i> Payment</a></li>
                         @guest
                         <li class="nav-item {{url()->current() == route('login') ? 'active' : ''}}"><a class="nav-link" href="{{ route('login') }}"><i class="fas fa-user"></i> {{ __('Login') }}</a></li>
                         <li class="nav-item {{url()->current() == route('register') ? 'active' : ''}}"><a class="nav-link" href="{{ route('register') }}"><i class="fas fa-sign-in-alt"></i> {{ __('Register') }}</a></li>
@@ -82,6 +82,9 @@
                                 </form>
                             </div>
                         </li>
+                        @if(Auth::user()->role == 1)
+                            <li class="nav-item {{url()->current() == route('admin') ? 'active' : ''}}"><a class="nav-link" href="{{ route('admin') }}"> {{ __('Admin') }}</a></li>
+                        @endif
                         @endguest
                     </ul>
                 </div>

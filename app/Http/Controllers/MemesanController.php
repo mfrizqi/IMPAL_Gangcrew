@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Memesan;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 
 class MemesanController extends Controller
@@ -17,14 +18,26 @@ class MemesanController extends Controller
 
     public function reserve(Request $req){
         $r = $req->query();
-        $end = Carbon::parse($r['checkout']);
-        $start = Carbon::parse($r['checkin']);
-        $length = $end->diffInDays($start);
-        $hasil = ($length + 1) * $r['harga'];
-        // dd($hasil);
-        return view('reserve',[
-            'r' => $r,
-            'harga' => $hasil
+            $end = Carbon::parse($r['checkout']);
+            $start = Carbon::parse($r['checkin']);
+            $length = $end->diffInDays($start); 
+            $hasil = $r['harga'];
+            return view('reserve',[
+                'r' => $r,
+                'harga' => $hasil
+            ]);
+    }
+
+    public function payment() {
+        $tagihan = Auth::user()->memesan()->get();
+        $bills = Auth::user()->memesan()->get();
+        $cash = 0;
+        foreach($bills as $b) {
+            $cash += $b->kamar()->first()->harga_kamar;
+        }
+        return view('payment', [
+            'tagihan' => $tagihan,
+            'bills' => $cash
         ]);
     }
 
@@ -53,20 +66,18 @@ class MemesanController extends Controller
     public function store(Request $request)
     {
         $Memesan = new Memesan;
-        $Memesan->id_memesan = $request->id;
-        $Memesan->id_kamar = $request->id_kamar;
-        $Memesan->id_user = $request->id_user;
-        $Memesan->jenis_kamar = $request->jenis;
-        $Memesan->harga = $request->harga;
-        $Memesan->status = $request->status;
+        $Memesan->kamar_id = $request->id_kamar;
+        $Memesan->user_id = Auth::user()->id;
+        $Memesan->Checkin = Carbon::parse($request->checkin)->format('Y-m-d');
+        $Memesan->Checkout = Carbon::parse($request->checkout)->format('Y-m-d');
 
-        $Kamar->save();
+        $Memesan->save();
 
-        if($Kamar->save()){
-            return back()->with('success','Memesan Berhasil Dibuat');
+        if($Memesan->save()){
+            return redirect()->route('payment')->with('success','Memesan Berhasil Dibuat');
         }
         else{
-            return back()->with('danger','Memesan Gagal Dibuat');
+            return redirect()->route('payment')->with('danger','Memesan Gagal Dibuat');
         }
     }
 

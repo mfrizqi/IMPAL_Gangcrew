@@ -25,15 +25,15 @@
                             <div class="form-group col-md-3">
                                 <div class="book-date one-third">
                                     <label for="check-in">Check in:</label>
-                                <input type="text" name="checkin" id="checkin_date" class="form-control" placeholder="M/D/YYYY" value="{{$r['checkin']}}"
-                                        style="border-radius: 4px; border: 2px solid #ff6138">
+                                    <input type="text" name="checkin" id="checkin_date" class="form-control"
+                                        placeholder="M/D/YYYY" value="{{$r['checkin']}}" style="border-radius: 4px; border: 2px solid #ff6138">
                                 </div>
                             </div>
                             <div class="form-group col-md-3">
                                 <div class="book-date one-third">
                                     <label for="check-out">Check out:</label>
-                                    <input type="text" name="checkout" id="checkout_date" class="form-control" placeholder="M/D/YYYY" value="{{$r['checkout']}}"
-                                        style="border-radius: 4px; border: 2px solid #ff6138">
+                                    <input type="text" name="checkout" id="checkout_date" class="form-control"
+                                        placeholder="M/D/YYYY" value="{{$r['checkout']}}" style="border-radius: 4px; border: 2px solid #ff6138">
                                 </div>
                             </div>
                             <div class="form-group col-md-3">
@@ -71,15 +71,16 @@
                     <h2>Room Availability</h2>
                 </div>
             </div>
-            
+
+            @if($kamar)
             @foreach($kamar as $km)
                 <?php $i = 0 ?>
-                    @foreach($memesan as $m)
-                        @if($km->id == $m->id_kamar)
-                            <?php $i = 1 ?>
-                        @endif
-                    @endforeach
-                @if($i != 1) 
+                @foreach($memesan as $m)
+                    @if($km->id == $m->id_kamar)
+                    <?php $i = 1 ?>
+                    @endif
+                @endforeach
+            @if($i != 1)
             <div class="row justify-content-center">
                 <div class="col-md-8 ftco-animate" style="border: none">
                     <div class="room-wrap bg-light">
@@ -102,13 +103,17 @@
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                 </p> -->
-                            <p><a href="{{route('reserve',['checkin'=>$r['checkin'], 'checkout'=>$r['checkout'], 'harga'=>$km->harga_kamar])}}" class="btn btn-primary">Reserve a room</a></p>
+                            <p><a href="{{route('reserve',['checkin'=>$r['checkin'], 'checkout'=>$r['checkout'], 'harga'=>$km->harga_kamar, 'id_kamar' => $km->id])}}"
+                                    class="btn btn-primary">Reserve a room</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-                @endif
+            @endif
             @endforeach
+            @else
+                <h2>Kamar tidak tersedia</h2>
+            @endif
             <!-- <div class="row justify-content-center">
                 <div class="col-md-8 ftco-animate" style="border: none">
                     <div class="room-wrap bg-light">
@@ -125,14 +130,14 @@
                                     <p class="price">$99 <br><span>/night</span></p>
                                 </div>
                             </div> -->
-                            <!-- <p class="features">
+            <!-- <p class="features">
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Perfect for traveling couples</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Breakfast included</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Two double beds</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Baby sitting facilities</span>
                   <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                 </p> -->
-                            <!-- <p><a href="{{route('reserve')}}" class="btn btn-primary">Reserve a room</a></p>
+            <!-- <p><a href="{{route('reserve')}}" class="btn btn-primary">Reserve a room</a></p>
                         </div>
                     </div>
                 </div>

@@ -41,9 +41,11 @@ class KamarController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        // #GAY
-        
+    {   
+        $kamar = Kamar::all();
+        return view('room', [
+            'kamars' => $kamar
+        ]);
     }
 
     /**

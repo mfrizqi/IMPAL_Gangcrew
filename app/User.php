@@ -29,7 +29,7 @@ class User extends Authenticatable
     ];
 
     function memesan(){
-        return $this->hasOne(Memesan::class);
+        return $this->hasMany(Memesan::class);
     } 
     
 }

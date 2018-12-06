@@ -6,7 +6,7 @@
 <div style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('image/bg_3.jpg');background-size: cover;">
     <section class="ftco-section mt-0">
         <div class="container">
-            <h1 class="text-white mt-5 mb-5 text-center">Pusat kelola admin</h1>
+            <h1 class="text-white mt-5 mb-5 text-center">Admin Center</h1>
             <div class="row">
                 <div class="col-md-8 text-center">
                     <div class="card-group">
@@ -14,21 +14,21 @@
                             <div class="card-body">
                                 <i class="far fa-building" style="font-size: 5rem"></i>
                                 <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$ck}}</p>
-                                <p class="card-text" style="font-size: 1.2rem">Kamar</p>
+                                <p class="card-text" style="font-size: 1.2rem">Room</p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <i class="fas fa-user-tie" style="font-size: 5rem"></i>
                                 <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$cp}}</p>
-                                <p class="card-text" style="font-size: 1.2rem">Pegawai</p>
+                                <p class="card-text" style="font-size: 1.2rem">Employee</p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-body">
                                 <i class="fas fa-users" style="font-size: 5rem"></i>
                                 <p class="card-text mt-3 mb-0" style="font-size: 1.7rem; font-weight: 600">{{$ct}}</p>
-                                <p class="card-text" style="font-size: 1.2rem">Tamu</p>
+                                <p class="card-text" style="font-size: 1.2rem">Guest</p>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="fas fa-chart-line" style="font-size: 5rem"></i>
-                            <p class="card-text mb-4" style="font-size: 1.2rem">Statistik</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#statistik">Lihat
+                            <p class="card-text mb-4" style="font-size: 1.2rem">Statistics</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#statistik">See
                                 detail</button>
                         </div>
                     </div>
@@ -50,14 +50,14 @@
                     <ul class="nav nav-pills d-flex justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="pill" href="#kamar"><i class="far fa-building"></i>
-                                Kamar</a>
+                                Room</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="pill" href="#pegawai"><i class="fas fa-user-tie"></i>
-                                Pegawai</a>
+                                Employee</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#tamu"><i class="fas fa-users"></i> Tamu</a>
+                            <a class="nav-link" data-toggle="pill" href="#tamu"><i class="fas fa-users"></i> Guest</a>
                         </li>
                     </ul>
 
@@ -92,8 +92,8 @@
                                                     facilities</span>
                                                 <span class="d-block mb-2"><i class="icon-check mr-2"></i> Free wifi</span>
                                             </p>
-                                            <p><a href="#kelola{{$k->id}}" class="btn btn-primary" data-toggle="modal">Kelola
-                                                    kamar</a></p>
+                                            <p><a href="#kelola{{$k->id}}" class="btn btn-primary" data-toggle="modal">Manage
+                                                    Room</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
 
                                             <!-- Modal Header -->
                                             <div class="modal-header">
-                                                <h4 class="modal-title">Kelola kamar</h4>
+                                                <h4 class="modal-title">Manage Room</h4>
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
 
@@ -114,10 +114,10 @@
                                                 <!-- Nav pills -->
                                                 <ul class="nav nav-pills">
                                                     <li class="nav-item">
-                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiKamar">Perbarui</a>
+                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiKamar">Update</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="pill" href="#hapusKamar">Hapus</a>
+                                                        <a class="nav-link" data-toggle="pill" href="#hapusKamar">Delete</a>
                                                     </li>
                                                 </ul>
 
@@ -137,14 +137,14 @@
                                                                 </select>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label for="foto">Unggah foto kamar: </label>
+                                                                <label for="foto">Upload photo room: </label>
                                                                 <input type="file" name="foto_kamar" id="foto" class="form-control">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input type="number" name="harga" class="form-control"
                                                                     placeholder="Harga" value="{{$k->harga_kamar}}">
                                                             </div>
-                                                            <button type="submit" class="btn btn-success">Rekam data</button>
+                                                            <button type="submit" class="btn btn-success">Save data</button>
                                                         </form>
                                                     </div>
                                                     <div class="tab-pane container fade" id="hapusKamar">
@@ -152,8 +152,8 @@
                                                         <form action="{{route('kamar.destroy', $k->id)}}" method="POST">
                                                             @csrf
                                                             @method('DELETE')
-                                                            <p>Apakah anda yakin ?</p>
-                                                            <button type="submit" class="btn btn-danger">Ya</button>
+                                                            <p>Are you sure ?</p>
+                                                            <button type="submit" class="btn btn-danger">Yes</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -181,8 +181,8 @@
                                                     style="width: 100px; height: 100px; border-radius: 50%">
                                                 <p class="card-text mt-3 mb-0" style="font-size: 2rem">{{$p->name}}</p>
                                                 <p class="card-text" style="font-size: 1.5rem">{{$p->email}}</p>
-                                                <p><a href="#kelolaPegawai{{$p->id}}" class="btn btn-primary" data-toggle="modal">Kelola
-                                                        pegawai</a></p>
+                                                <p><a href="#kelolaPegawai{{$p->id}}" class="btn btn-primary" data-toggle="modal">Manage
+                                                        Employee</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@
 
                                             <!-- Modal Header -->
                                             <div class="modal-header">
-                                                <h4 class="modal-title">Kelola pegawai</h4>
+                                                <h4 class="modal-title">Manage employee</h4>
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
 
@@ -204,10 +204,10 @@
                                                 <!-- Nav pills -->
                                                 <ul class="nav nav-pills">
                                                     <li class="nav-item">
-                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiPegawai">Perbarui</a>
+                                                        <a class="nav-link active" data-toggle="pill" href="#perbaruiPegawai">Update</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="pill" href="#hapusPegawai">Hapus</a>
+                                                        <a class="nav-link" data-toggle="pill" href="#hapusPegawai">Delete</a>
                                                     </li>
                                                 </ul>
 
@@ -230,7 +230,7 @@
                                                             <div class="form-group">
                                                                 <textarea name="almt" id="alamat" cols="30" rows="10"
                                                                     class="form-control" value="{{$p->alamat}}"
-                                                                    required>Alamat</textarea>
+                                                                    required>Address</textarea>
                                                             </div>
                                                             <div class="form-group">
                                                                 <input type="number" name="umr" class="form-control"
@@ -245,7 +245,7 @@
                                                                 <input type="number" name="gji" class="form-control"
                                                                     placeholder="Gaji" value="{{$p->gaji}}" required>
                                                             </div>
-                                                            <button type="submit" class="btn btn-success">Perbarui data</button>
+                                                            <button type="submit" class="btn btn-success">Update data</button>
                                                         </form>
                                                     </div>
                                                     <div class="tab-pane container fade" id="hapusPegawai">
@@ -253,8 +253,8 @@
                                                         <form action="{{route('user.destroy', $p->id)}}" method="POST">
                                                             @csrf
                                                             @method('DELETE')
-                                                            <p>Apakah anda yakin ?</p>
-                                                            <button type="submit" class="btn btn-danger">Ya</button>
+                                                            <p>Are you sure ?</p>
+                                                            <button type="submit" class="btn btn-danger">Yes</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -281,8 +281,8 @@
                                                 style="width: 100px; height: 100px; border-radius: 50%">
                                             <p class="card-text mt-3 mb-0" style="font-size: 2rem">{{$p->name}}</p>
                                             <p class="card-text" style="font-size: 1.5rem">{{$p->email}}</p>
-                                            <p><a href="#kelolaTamu{{$p->id}}" class="btn btn-primary" data-toggle="modal">Kelola
-                                                    tamu</a></p>
+                                            <p><a href="#kelolaTamu{{$p->id}}" class="btn btn-primary" data-toggle="modal">Manage
+                                                    guest</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@
 
                                         <!-- Modal Header -->
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Kelola tamu</h4>
+                                            <h4 class="modal-title">Manage guest</h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
 
@@ -304,10 +304,10 @@
                                             <!-- Nav pills -->
                                             <ul class="nav nav-pills">
                                                 <li class="nav-item">
-                                                    <a class="nav-link active" data-toggle="pill" href="#perbaruiTamu">Perbarui</a>
+                                                    <a class="nav-link active" data-toggle="pill" href="#perbaruiTamu">Update</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link" data-toggle="pill" href="#hapusTamu">Hapus</a>
+                                                    <a class="nav-link" data-toggle="pill" href="#hapusTamu">Delete</a>
                                                 </li>
                                             </ul>
 
@@ -329,7 +329,7 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control"
-                                                                value="{{$p->alamat}}" required>Alamat</textarea>
+                                                                value="{{$p->alamat}}" required>Address</textarea>
                                                         </div>
                                                         <div class="form-group">
                                                             <input type="number" name="umr" class="form-control"
@@ -344,7 +344,7 @@
                                                             <input type="number" name="gji" class="form-control"
                                                                 placeholder="Gaji" value="{{$p->gaji}}" required>
                                                         </div>
-                                                        <button type="submit" class="btn btn-success">Perbarui data</button>
+                                                        <button type="submit" class="btn btn-success">Update data</button>
                                                     </form>
                                                 </div>
                                                 <div class="tab-pane container fade" id="hapusTamu">
@@ -352,8 +352,8 @@
                                                     <form action="{{route('user.destroy', $p->id)}}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <p>Apakah anda yakin ?</p>
-                                                        <button type="submit" class="btn btn-danger">Ya</button>
+                                                        <p>Are you sure ?</p>
+                                                        <button type="submit" class="btn btn-danger">Yes</button>
                                                     </form>
                                                 </div>
                                             </div>
@@ -377,7 +377,7 @@
 </div>
 
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#input" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000">
-    <i class="fas fa-plus"></i> Tambah data
+    <i class="fas fa-plus"></i> Add data
 </button>
 
 
@@ -388,7 +388,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Statistik</h4>
+                <h4 class="modal-title">Statistics</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -413,7 +413,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Tambah data</h4>
+                <h4 class="modal-title">Add data</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -422,10 +422,10 @@
                 <!-- Nav pills -->
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#inputKamar">Kamar</a>
+                        <a class="nav-link active" data-toggle="pill" href="#inputKamar">Room</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#inputPegawai">Pegawai</a>
+                        <a class="nav-link" data-toggle="pill" href="#inputPegawai">Employee</a>
                     </li>
                 </ul>
 
@@ -443,13 +443,13 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="foto">Unggah foto kamar: </label>
+                                <label for="foto">Upload room photo: </label>
                                 <input type="file" name="foto_kamar" id="foto" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="number" name="harga" class="form-control" placeholder="Harga">
                             </div>
-                            <button type="submit" class="btn btn-success">Rekam data</button>
+                            <button type="submit" class="btn btn-success">Save data</button>
                         </form>
                     </div>
                     <div class="tab-pane container fade" id="inputPegawai">
@@ -464,7 +464,7 @@
                                     required>
                             </div>
                             <div class="form-group">
-                                <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control" required>Alamat</textarea>
+                                <textarea name="almt" id="alamat" cols="30" rows="10" class="form-control" required>Address</textarea>
                             </div>
                             <div class="form-group">
                                 <input type="number" name="umr" class="form-control" placeholder="Umur" required>
@@ -475,7 +475,7 @@
                             <div class="form-group">
                                 <input type="number" name="gji" class="form-control" placeholder="Gaji" required>
                             </div>
-                            <button type="submit" class="btn btn-success">Rekam data</button>
+                            <button type="submit" class="btn btn-success">Save data</button>
                         </form>
                     </div>
                 </div>

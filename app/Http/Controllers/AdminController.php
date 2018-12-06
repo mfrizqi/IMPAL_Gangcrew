@@ -14,7 +14,7 @@ class AdminController extends Controller
         $countPegs = User::where('role', 2)->count();
         $kamars = Kamar::all();
         $pegawai = User::where('role', 2)->get();
-        $tamu = User::where('role', 0);
+        $tamu = User::where('role', 0)->get();
         return view('admin', [
             'ck' => $countKams,
             'ct' => $countTams,

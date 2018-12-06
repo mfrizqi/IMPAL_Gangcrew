@@ -14,14 +14,12 @@ class Memesan extends Model
         'status',
         'Checkin',
         'Checkout'];
-    function kamar(){
+        
+    public function kamar(){
         return $this->belongsTo(Kamar::class);
     }
-    function tamu(){
-        return $this->hasOne(User::class);
-    }
-    function konfirmasi(){
-        return $this->hasOne(Konfirmasi::class);
-    }
 
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
