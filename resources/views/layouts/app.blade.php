@@ -85,6 +85,9 @@
                         @if(Auth::user()->role == 1)
                             <li class="nav-item {{url()->current() == route('admin') ? 'active' : ''}}"><a class="nav-link" href="{{ route('admin') }}"> {{ __('Admin') }}</a></li>
                         @endif
+                        @if(Auth::user()->role == 2)
+                            <li class="nav-item {{url()->current() == route('confirmation') ? 'active' : ''}}"><a class="nav-link" href="{{ route('confirmation') }}"> {{ __('Confirmation') }}</a></li>
+                        @endif
                         @endguest
                     </ul>
                 </div>

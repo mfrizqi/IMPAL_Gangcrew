@@ -9,6 +9,19 @@ use Carbon\Carbon;
 
 class KamarController extends Controller
 {
+    public function confirmation() {
+        $pesan = Memesan::where('status', false)->get();
+        return view('confirmation', [
+            'tagihan' => $pesan
+        ]);
+    }
+
+    public function confirm(Request $req) {
+        $r = Memesan::find($req->memesan_id);
+        $r->status = true;
+        $r->save();
+        return back()->with('success', 'Payment confirmed');
+    }
 
     public function checkroom(Request $req) {
         $r = $req->query();

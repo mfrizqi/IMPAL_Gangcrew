@@ -23,6 +23,10 @@ Route::middleware('auth')->group(function() {
     Route::resource('/kamar', 'KamarController');
     Route::resource('/memesan', 'MemesanController');
     Route::resource('/user', 'UserController');
+
+    Route::get('/confirmation', 'KamarController@confirmation')->name('confirmation');
+
+    Route::post('/confirm', 'KamarController@confirm')->name('confirm');
 });
 
 
